@@ -1,0 +1,33 @@
+//EventTest.java
+
+import java.applet.Applet;
+import java.awt.*;
+import java.awt.event.*;
+
+public class EventTest extends Applet implements MouseListener{
+    private int myColor;
+    private Color colorTable[]={Color.red,Color.green,Color.blue};
+
+    public void init(){
+	myColor=0;
+	addMouseListener(this);
+    }
+
+    public void paint(Graphics g){
+	g.setColor(colorTable[myColor]);
+	g.fillOval(10,10,80,80);
+    }
+
+    //Methods for mouseListener
+
+    public void mousePressed(MouseEvent e){
+	repaint();
+	myColor=(myColor+1)%colorTable.length;
+	//repaint();
+    }
+
+    public void mouseClicked(MouseEvent e){}
+    public void mouseEntered(MouseEvent e){}
+    public void mouseExited(MouseEvent e){}
+    public void mouseReleased(MouseEvent e){}
+}

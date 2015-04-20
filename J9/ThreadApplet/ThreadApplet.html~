@@ -1,0 +1,9 @@
+<HTML>
+<HEAD>
+<TITLE>ThreadApplet</TITLE>
+</HEAD>
+<BODY>
+<APPLET CODE="ThreadApplet.class" WIDTH=400 HEIGHT=500>
+</APPLET>
+</BODY>
+</HTML>

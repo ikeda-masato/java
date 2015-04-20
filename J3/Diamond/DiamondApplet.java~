@@ -1,0 +1,20 @@
+//DiamondApplet.java
+import java.applet.Applet;
+import java.awt.*;
+
+public class DiamondApplet extends Applet{
+    public void paint(Graphics g){
+
+	g.setColor(Color.lightGray);
+	g.fillRect(0,0,400,500);
+	int s[]={10,30,50,30};
+	int t[]={20,20,20,30};
+	for(int i=0;i<10;i++){
+	    Diamond c = new Diamond(s,t,4);
+	g.setColor(Color.black);
+	c.draw(g);
+	}
+	
+	
+    }
+}

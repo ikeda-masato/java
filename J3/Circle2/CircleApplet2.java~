@@ -1,0 +1,15 @@
+//CircleApplet2.java
+import java.applet.Applet;
+mport java.awt.Graphics;
+
+public class CircleApplet2 extends Applet{
+    public void paint(Graphics g){
+	Circle2 c=new Circle2(20,50,20);
+
+	c.draw(g);
+	c.moveTo(80,50);
+	c.draw(g);
+	c.moveTo(140,50);
+	c.draw(g)
+	    }
+}

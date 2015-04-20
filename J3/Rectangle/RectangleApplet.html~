@@ -1,0 +1,9 @@
+HTML>
+<HEAD>
+<TITLE>RectangleApplet</TITLE>
+</HEAD>
+<BODY>
+<APPLET CODE="RectangApplet.class" WIDTH=400 HEIGHT=500>
+</APPLET>
+</BODY>
+</HTML>

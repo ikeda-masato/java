@@ -1,0 +1,9 @@
+class ex3{
+    public static void main(String args[]){
+	int n=5,a=0,b=1;
+	for(a=n;a>0;a--){
+	    b*=a;
+	}
+	System.out.println(n+"の階乗は"+b);
+    }
+}

@@ -1,0 +1,9 @@
+<HTML>
+<HEAD>
+<TITLE>InterfaceTest1Applet</TITLE>
+</HEAD>
+<BODY>
+<APPLET CODE="InterfaceTest1.class" WIDTH=400 HEIGHT=500>
+</APPLET>
+</BODY>
+</HTML>

@@ -1,0 +1,22 @@
+import java.applet.Applet;
+import java.awt.*;
+
+public class ex1 extends Applet{
+    public void paint(Graphics g){
+	g.setColor(Color.red);
+	g.drawLine(0,100,200,100);
+	g.drawLine(100,0,100,200);
+	g.setColor(Color.blue);
+
+	int olda=0;
+	int oldb=0;
+	for(double x=-0.99;x<=1;x=x+0.01){
+	    double y=x;
+	    int a=(int)(100*x+100);
+	    int b=(int)(-100*y+100);
+	    g.drawLine(olda,oldb,a,b);
+	    olda=a;
+	    oldb=b;
+	}
+    }
+}

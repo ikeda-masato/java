@@ -1,0 +1,9 @@
+<HTML>
+<HEAD>
+<TITLE>CircleApplet2</TITLE>
+</HEAD>
+<BODY>
+<APPLET CODE="CircleApplet2.class" WIDTH=250 HIGHT=100>
+</APPLET>
+</BODY>
+</HTML>

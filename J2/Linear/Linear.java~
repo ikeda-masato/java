@@ -1,0 +1,25 @@
+//Linear.java
+//A Graph of y = x
+
+import java.applet.Applet;
+import java.awt.*;
+
+public class Linear extends Applet{
+    public void paint(Graphics g){
+	g.setColor(Color.red);
+	g.drawLine(0,100,200,100);
+	g.drawLine(100,0,100,200);
+	g.setColor(Color.blue);
+
+	int olda=0;
+	int oldb=200;
+	for(double x=-0.99;x<=1;x=x+0.01){
+	    double y=x;
+	    int a=(int)(100*x+100);
+	    int b=(int)(-100*y+100);
+	    g.drawLine(olda,olda,a,b);
+	    olda=a;
+	    olda=b;
+	}
+    }
+}
